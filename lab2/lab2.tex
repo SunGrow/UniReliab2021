@@ -1,0 +1,114 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[a4paper,lmargin=3cm,rmargin=2cm,tmargin=2cm,bmargin=2cm]{geometry}
+\usepackage[ddmmyyyy]{datetime}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
+\usepackage{minted}
+
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\bfseries\centering}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+\usepackage{setspace}
+\singlespacing
+%\onehalfspacing
+%\doublespacing
+\setlength{\parindent}{1.25cm}
+\let\oldsection\section
+\renewcommand\section{\clearpage\oldsection}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{~/texdoc/bibl.bib}
+\input{~/texdoc/unibind.tex}
+\usepackage{multirow}
+
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\usetikzlibrary{positioning}
+
+\tikzset{
+	state/.style={
+		rectangle,
+		draw=black, very thick,
+		anchor=west, align=left,
+		text width=6cm,
+	},
+}
+\usepackage{csquotes}
+\usepackage{mathtools}
+
+\begin{document}
+\unititle
+{\klgtu}
+{\fapu}
+{\suvt}
+{ Лабораторная работа №2 \par Анализ АСОИУ с использованием принципов системного подхода }
+{По дисциплине: «Надежность и качество АСОИУ»}
+{Доцент}
+{Розен Н.Б.}
+{ст. гр. 18-ВТ}
+{Поляков Л.Д.}
+
+\tableofcontents
+
+\section{Цель}
+
+Овладеть принципами реализации системного подхода и системного анализа применительно к сложным информационным системам и программным комплексам.
+
+\section{Задание}
+
+Для объекта: Автоматизированная система учета материальных средств:
+\begin{enumerate}
+	\item Построение иерархии системы;
+	\item Описание цели рассматриваемой системы;
+	\item Описание структуры системы и ее взаимосвязей с окружением;
+	\item Описание функционирования системы в пространстве состояний;
+	\item Определение и обоснование показателей надежности системы применительно к конкретной АСОИУ (4-5 показателей);
+	\item Приведите 3-4 примера для подтверждения показателей надежности конкретной АСОИУ;
+	\item Выполнение необходимых графические работы, заполнение необходимых таблицы, подготовка и представление отчета о проделанной работе в установленной форме;
+\end{enumerate}
+
+\section{Ход работы}
+
+\subsection{Построение иерархии системы}
+
+\includegraphics[width=\textwidth]{}
+
+\subsection{Описание цели рассматриваемой системы}
+
+Учет материальных средств
+
+\subsection{Описание структуры системы и ее взаимосвязей с окружением}
+
+Клиент - система
+
+\begin{tabular}{|p{0.15\textwidth}|p{0.18\textwidth}|p{0.24\textwidth}|p{0.18\textwidth}|}
+	\hline
+Состояние сетевого подключения & Исправное & Работоспособное & Рабочее \\ \hline
+Состояние электричества & Исправное & Работоспособное & Рабочее \\ \hline
+Состояние сотрудников & Исправное & Работоспособное & Рабочее \\ \hline
+Состояние базы данных  & Исправное & Работоспособное & Рабочее \\ \hline
+\end{tabular}
+
+% Исправное, работоспособное и рабочее состояние
+
+\subsection{Описание функционирования системы в пространстве состояний}
+
+% Управление и взаимодействие с внешней средой
+
+\subsection{Определение и обоснование показателей надежности системы применительно к конкретной АСОИУ (4-5 показателей)}
+
+Распределение прав доступа. Пароли и т.д.
+
+
+
+
+
+\end{document}

@@ -1,0 +1,9 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'lab1.blg'
+[104] biber:330> INFO - === Fri Sep 10, 2021, 09:31:58
+[132] Biber.pm:415> INFO - Reading 'lab1.bcf'
+[233] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[243] Utils.pm:395> WARN - The file 'lab1.bcf' does not contain any citations!
+[254] bbl.pm:651> INFO - Writing 'lab1.bbl' with encoding 'UTF-8'
+[254] bbl.pm:754> INFO - Output to lab1.bbl
+[254] Biber.pm:128> INFO - WARNINGS: 1
